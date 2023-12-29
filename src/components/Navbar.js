@@ -12,7 +12,7 @@ function Navbar() {
           {/* Search bar */}
           <div
             className="search-bar flex flex-row bg-03-shadow"
-            style={{ flex: "1" }} // Make it take the remaining width
+            // style={{ flex: "1" }} // Make it take the remaining width
           >
             <div className="flex flex-row">
               <span className="ml-5 mt-1">
