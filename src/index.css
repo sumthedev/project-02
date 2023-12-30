@@ -41,6 +41,7 @@
 .sidebar {
   position: fixed;
   height: 100vh;
+  z-index: 100;
 }
 .bg-01 {
   background-color: #ffffff;
