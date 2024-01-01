@@ -28,19 +28,25 @@
 }
 
 .header {
-  grid-area: header;
+  position: fixed;
+  top: 0;
+  left: 275px;
+  right: 0;
+  z-index: 100;
 }
 
 .main {
   background-color: #fff;
   grid-area: main;
   display: grid;
+  margin-top: 30px;
 }
 
 /* sidebar */
 .sidebar {
   position: fixed;
   height: 100vh;
+  z-index: 100;
 }
 .bg-01 {
   background-color: #ffffff;
@@ -70,6 +76,7 @@ a.active {
 
 .grid-01 {
   display: grid;
+
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
   grid-template-areas:
@@ -185,18 +192,17 @@ a.active {
   align-items: center;
   justify-content: space-between;
 }
-.navbar {
-  position: fixed;
-  z-index: 100;
-  background-color: white;
-  /* max-width: 1200px;
-  width: 100%; */
-  overflow: hidden;
-}
+
 .popover-container {
   position: absolute;
-  z-index: 1; /* Ensure the popover is on top of other elements */
-  /* Add styling for the popover, like background color, box shadow, etc. */
+  z-index: 1;
+  right: 130px;
+}
+
+.popover-container-2 {
+  position: absolute;
+  z-index: 1;
+  right: 50px;
 }
 .user-graph {
   overflow: hidden;

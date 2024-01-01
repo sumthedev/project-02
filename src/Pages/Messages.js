@@ -3,7 +3,7 @@ import React from "react";
 function Messages() {
   return (
     <>
-      <div className="flex">
+      <div className="flex w-[100%]">
         <div className="flex  flex-col  h-[600] mt-[20px] messages">
           <div
             className=" flex flex-row w-[318.02px] h-[50px] "
@@ -40,7 +40,7 @@ function Messages() {
                 </span>
               </div>
             </div>
-            <div className="flex-col active-02 mt-[8px] flex w-[318.02px] h-[59px]">
+            <div className="flex-col active-02 mt-[8px] flex w-[340px] h-[59px]">
               <div className="flex flex-row">
                 <span className="mt-[12px] ml-[12px]">
                   <img src="/images/avatar-06.png" alt="chat1" />

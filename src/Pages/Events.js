@@ -188,7 +188,7 @@ const Events = () => {
                         <img src="/images/shape.svg" alt="down" />
                       </button>
                       {openEventActionIndex === index && (
-                        <div className="popover-container">
+                        <div className="popover-container-2">
                           <EventAction />
                         </div>
                       )}

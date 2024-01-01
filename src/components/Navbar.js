@@ -3,16 +3,13 @@ import React from "react";
 function Navbar() {
   return (
     <>
-      {/* Navbar container with Flexbox */}
-      <div style={{width:'81%'}} className="flex items-center bg-04-shadow navbar p-[10px] justify-between">
-        
+      <div className="flex items-center bg-04-shadow  p-[10px] justify-between">
         {/* Left side of the Navbar */}
         <div className="flex flex-grow">
-          
           {/* Search bar */}
           <div
             className="search-bar flex flex-row bg-03-shadow"
-            style={{ flex: "1" }} // Make it take the remaining width
+            // Make it take the remaining width
           >
             <div className="flex flex-row">
               <span className="ml-5 mt-1">
