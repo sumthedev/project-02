@@ -68,7 +68,7 @@ function User() {
             <img src="/images/up.svg" alt="up" />
           </span>
           <div
-            className="search-bar mt-[6.5px] flex flex-row ml-[500px]
+            className="search-bar mt-[6.5px] flex flex-row ml-[400px]
          bg-03-shadow "
           >
             <div className="flex flex-row ">
