@@ -8,13 +8,7 @@ function Navbar() {
         <div className="flex flex-grow">
           {/* Search bar */}
           <div
-            className="search-bar flex flex-row bg-03-shadow"
-<<<<<<< HEAD
-      
-=======
-            // style={{ flex: "1" }} // Make it take the remaining width
->>>>>>> bb2ed9c1c6d8dc0020ff88f82f97c591fb97bd70
-          >
+            className="search-bar flex flex-row bg-03-shadow">
             <div className="flex flex-row">
               <span className="ml-5 mt-1">
                 <img src="/images/search-normal.svg" alt="search" />
