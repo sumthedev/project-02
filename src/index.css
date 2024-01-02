@@ -17,14 +17,9 @@
 }
 
 .container {
-  display: grid;
   height: 100vh;
-  grid-template-columns: 260px 1fr;
-  grid-template-rows: 60px 1fr;
-  grid-template-areas:
-    "sidebar header"
-    "sidebar main";
-  gap: 1rem;
+
+  width: 100%;
 }
 
 .header {
@@ -37,15 +32,20 @@
 
 .main {
   background-color: #fff;
-  grid-area: main;
-  display: grid;
-  margin-top: 30px;
+  margin-top: 60px;
+  margin-left: 300px;
+
+  display: flex;
 }
 
 /* sidebar */
 .sidebar {
   position: fixed;
   height: 100vh;
+  z-index: 100;
+  bottom: 0;
+
+  left: 0;
   z-index: 100;
 }
 .bg-01 {
@@ -73,49 +73,6 @@ a.active {
 }
 
 /* dashboard main page */
-
-.grid-01 {
-  display: grid;
-
-  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-areas:
-    "c1 c2 c3 c3"
-    "c4 c4 c3 c3"
-    "c5 c5 c5 c6"
-    "c5 c5 c5 c6";
-  gap: 1rem;
-}
-
-.card:nth-child(1) {
-  grid-area: c1;
-  width: 170px;
-  height: 180px;
-}
-
-.card:nth-child(2) {
-  grid-area: c2;
-  width: 170px;
-  height: 180px;
-}
-
-.card:nth-child(3) {
-  grid-area: c3;
-  width: 754.17px;
-  height: 380px;
-}
-
-.card:nth-child(4) {
-  grid-area: c4;
-}
-
-.card:nth-child(5) {
-  grid-area: c5;
-}
-
-.card:nth-child(6) {
-  grid-area: c6;
-}
 
 .bg-02-shadow {
   box-shadow: 0px 4px 24px 0px #0000000f;
@@ -789,4 +746,28 @@ pagination */
   letter-spacing: 0px;
   text-align: left;
   color: #5e5873;
+}
+
+#table-01 {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+/* Adjust to ensure the table takes the full width of the screen */
+
+#table-01 th,
+#table-01 td {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#table-01 th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+
+@media (min-width: 1280px) {
+  .container {
+    max-width: 100%;
+  }
 }
