@@ -46,12 +46,12 @@ function User() {
 
   return (
     <>
-      <div className="flex content flex-col user-graph z-100  bg-05-shadow  mt-[30px]">
+      <div className="bg-05-shadow w-full  mt-[50px]">
         <div
           className="flex flex-row "
           style={{ borderBottom: "1px solid #EBE9F1", marginRight: "10px" }}
         >
-          <span className="text-04 mt-[16px] ml-[30px]">Users</span>
+          <span className="text-04 p-[10px] mt-[16px] ml-[30px]">Users</span>
           <span className="mt-[1px] ml-auto">
             <button className="button-01 p-[10px] mt-[10px] mb-[10px]">
               <Link to="/form">+ Add User</Link>
@@ -59,7 +59,7 @@ function User() {
           </span>
         </div>
         <div
-          className="flex flex-row pr-4 w-[1050px] h-[58px] "
+          className="flex flex-row p-[10px] "
           style={{ borderBottom: "1px solid #EBE9F1", marginRight: "10px" }}
         >
           <span className="text-05  mt-[18px] ml-[30px]">Show</span>
@@ -68,7 +68,7 @@ function User() {
             <img src="/images/up.svg" alt="up" />
           </span>
           <div
-            className="search-bar mt-[6.5px] flex flex-row ml-[400px]
+            className="search-bar mt-[6.5px] flex flex-row ml-[500px]
          bg-03-shadow "
           >
             <div className="flex flex-row ">
@@ -85,9 +85,9 @@ function User() {
         </div>
         <div>
           <div>
-            <table className="w-full border-collapse">
+            <table id="table-01">
               <thead
-                className="head w-[1050px] h-[45px] "
+                className="head"
                 style={{
                   borderBottom: "2px solid #EBE9F1",
                   marginRight: "10px",
@@ -147,7 +147,7 @@ function User() {
                 {rows.map((item, index) => (
                   <tr
                     key={index}
-                    className=" w-[1050px] h-[58px] "
+                    className=" "
                     style={{
                       borderBottom: "2px solid #EBE9F1",
                       marginRight: "10px",
