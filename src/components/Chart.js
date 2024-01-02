@@ -69,7 +69,7 @@ const yTicks = Array.from({ length: 6 }, (_, index) => 100 + index * 50);
 export default function Chart() {
   return (
     <LineChart
-      width={790}
+      width={800}
       height={250}
       data={data}
       margin={{
