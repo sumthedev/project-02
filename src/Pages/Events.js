@@ -41,15 +41,15 @@ const Events = () => {
   const numberOfPages = Math.ceil(data.length / itemsPerPage);
   return (
     <>
-      <div className="flex flex-col bg-05-shadow  mt-[30px]">
+      <div className="bg-05-shadow w-full  mt-[50px]">
         <div
-          className="flex flex-row w-[1050px] h-[51.92px]"
+          className="flex flex-row p-[14px] "
           style={{ borderBottom: "1px solid #EBE9F1", marginRight: "10px" }}
         >
           <span className="text-04 mt-[12px] ml-[30px]">Events</span>
         </div>
         <div
-          className="flex flex-row pr-4 w-[1050px] h-[58px] "
+          className="flex flex-row p-[14px] "
           style={{ borderBottom: "1px solid #EBE9F1", marginRight: "10px" }}
         >
           <span className="text-05  mt-[18px] ml-[30px]">Show</span>
@@ -75,14 +75,8 @@ const Events = () => {
         </div>
         <div>
           <div>
-            <table className="w-full border-collapse">
-              <thead
-                className="head w-[1050px] h-[45px] "
-                style={{
-                  borderBottom: "2px solid #EBE9F1",
-                  marginRight: "10px",
-                }}
-              >
+            <table id="table-01">
+              <thead className="head">
                 <tr>
                   <th>
                     <span className="ml-4">NAME</span>
@@ -147,10 +141,9 @@ const Events = () => {
                 {rows.map((item, index) => (
                   <tr
                     key={index}
-                    className=" w-[1050px] h-[58px] "
+                    className=" w-full  "
                     style={{
                       borderBottom: "2px solid #EBE9F1",
-                      marginRight: "10px",
                     }}
                   >
                     <td>

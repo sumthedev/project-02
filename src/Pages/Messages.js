@@ -3,7 +3,7 @@ import React from "react";
 function Messages() {
   return (
     <>
-      <div className="flex w-[100%]">
+      <div className="flex mt-[50px] ">
         <div className="flex  flex-col  h-[600] mt-[20px] messages">
           <div
             className=" flex flex-row w-[318.02px] h-[50px] "
@@ -93,7 +93,7 @@ function Messages() {
             </div>
 
             <div
-              className="flex-col active-03 mt-[8px] flex w-[318px] h-[59px]"
+              className="flex-col active-03 mt-[8px] flex w-[340px] h-[59px]"
               style={{ borderBottom: "1px solid #EBE9F1", marginRight: "10px" }}
             >
               <div className="flex flex-row">
