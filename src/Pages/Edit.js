@@ -4,15 +4,15 @@ import Card from "../components/Card";
 function Edit() {
   return (
     <>
-      <div className="flex flex-col">
-        <div className="flex flex-row bg-02 mt-[20px] w-[1005px] h-[190px]">
+      <div className="flex flex-col mt-[50px] w-full p-[10px]">
+        <div className="flex w-full p-[10px] flex-row bg-02 mt-[20px] ">
           <div className="flex ml-[20px] mt-[12px]">
             <span>
               <img src="/images/view-01.png" alt="view" />
             </span>
           </div>
           <div>
-            <div className="flex flex-col ml-[20px] mt-[20px]">
+            <div className=" flex flex-col ml-[20px] mt-[20px]">
               <span className="text-black text-13 flex ml-[8px]">
                 Joe David
               </span>
@@ -41,7 +41,7 @@ function Edit() {
               </div>
             </div>
           </div>
-          <div className="flex back-color mt-[20px]  ml-[150px] w-[110px] h-[40px]">
+          <div className="flex justify-between back-color mt-[20px]  ml-[250px] w-[110px] h-[40px]">
             <Link to="/views">
               <button>
                 <span className="flex ml-[12px] flex-row mt-[10px]  text-sm text-white">
@@ -56,7 +56,7 @@ function Edit() {
             </button>
           </div>
         </div>
-        <div className="bg-02 w-[1005] mt-[20px] flex flex-row h-[290px]">
+        <div className="bg-02 w-full mt-[20px] flex flex-row h-[290px]">
           <div className="flex ml-[20px] mt-[18px] w-[250px] h-[280]">
             <span>
               <img src="/images/view-03.png" alt="view" />
@@ -86,7 +86,7 @@ function Edit() {
             </div>
           </div>
         </div>
-        <div className="flex ml-[20px] mt-[12px]">
+        <div className="flex ml-[20px] mt-[12px] w-full">
           <span className="text-23">Events</span>
         </div>
         <Card />
