@@ -4,6 +4,6 @@
 
 Runs the app in the development mode.\
 Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
+## `you can also see the project live view in the this link https://project-02-delta.vercel.app/`
 
 
