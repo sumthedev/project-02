@@ -59,7 +59,7 @@ function User() {
           </span>
         </div>
         <div
-          className="flex flex-row p-[10px] "
+          className="flex flex-row p-[10px] justify-between"
           style={{ borderBottom: "1px solid #EBE9F1", marginRight: "10px" }}
         >
           <span className="text-05  mt-[18px] ml-[30px]">Show</span>
@@ -193,7 +193,7 @@ function User() {
                   </tr>
                 ))}
               </tbody>
-              <tfoot className="">
+              <tfoot>
                 <tr>
                   <td className="text-10 " colSpan="">
                     <span className=" text-white flex flex-col ml-[30px]">
