@@ -153,13 +153,22 @@ a.active {
 .popover-container {
   position: absolute;
   z-index: 1;
-  right: 110px;
+  right: 130px;
 }
 
 .popover-container-2 {
   position: absolute;
   z-index: 1;
   right: 50px;
+}
+
+.popover-container-03 {
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+
+  z-index: 1; /* Make sure it appears above other elements */
 }
 .user-graph {
   overflow: hidden;
