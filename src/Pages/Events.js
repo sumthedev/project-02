@@ -41,7 +41,7 @@ const Events = () => {
   const numberOfPages = Math.ceil(data.length / itemsPerPage);
   return (
     <>
-      <div className="bg-05-shadow w-full  mt-[50px]">
+      <div className="bg-05-shadow w-full mr-[50px]  mt-[50px]">
         <div
           className="flex flex-row p-[14px] "
           style={{ borderBottom: "1px solid #EBE9F1", marginRight: "10px" }}
