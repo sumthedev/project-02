@@ -1,8 +1,9 @@
 import { useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
+
 import { data } from "../data/mockUpdata";
 import Pagination from "../components/Pagination";
 import Actions from "../components/Actions";
+import Form from "../components/Form";
 
 let itemsPerPage = 5;
 
@@ -10,6 +11,15 @@ const rows = data;
 
 function User() {
   const [currentPage, setCurrentPage] = useState(0);
+  const [showFormPopover, setShowFormPopover] = useState(false);
+
+  const toggleFormPopover = () => {
+    setShowFormPopover(!showFormPopover);
+  };
+
+  const closeFormPopover = () => {
+    setShowFormPopover(false);
+  };
 
   const rows = data.slice(
     currentPage * itemsPerPage,
@@ -53,9 +63,17 @@ function User() {
         >
           <span className="text-04 p-[10px] mt-[16px] ml-[30px]">Users</span>
           <span className="mt-[1px] ml-auto">
-            <button className="button-01 p-[10px] mt-[10px] mb-[10px]">
-              <Link to="/form">+ Add User</Link>
+            <button
+              className="button-01 p-[10px] mt-[10px] mb-[10px]"
+              onClick={toggleFormPopover}
+            >
+              + Add User
             </button>
+            {showFormPopover && (
+              <div className="popover-container-03">
+                <Form onClose={closeFormPopover} />
+              </div>
+            )}
           </span>
         </div>
         <div
