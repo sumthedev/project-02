@@ -56,7 +56,7 @@ function User() {
 
   return (
     <>
-      <div className="bg-05-shadow w-full mr-[50px]  mt-[50px]">
+      <div className="bg-05-shadow w-full mr-[50px] mt-[50px]">
         <div
           className="flex flex-row "
           style={{ borderBottom: "1px solid #EBE9F1", marginRight: "10px" }}
@@ -227,11 +227,13 @@ function User() {
                   </td>
                 </tr>
 
-                <Pagination
-                  currentPage={currentPage}
-                  numberOfPages={numberOfPages}
-                  handlePerPage={handlePerPage}
-                />
+                <tr className="flex justify-end items-end ml-auto">
+                  <Pagination
+                    currentPage={currentPage}
+                    numberOfPages={numberOfPages}
+                    handlePerPage={handlePerPage}
+                  />
+                </tr>
               </tfoot>
             </table>
           </div>
