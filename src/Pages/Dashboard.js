@@ -40,7 +40,7 @@ function Dashboard() {
                   </div>
                 </div>
               </div>
-              <div className=" w-[356px] h-[160px]  bg-01 bg-02-shadow">
+              <div className=" w-[370px] h-[160px]  bg-01 bg-02-shadow">
                 <div className="flex justify-between p-[10px]">
                   <div>
                     <div style={{ marginTop: "10px" }}>
