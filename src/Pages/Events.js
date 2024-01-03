@@ -204,12 +204,13 @@ const Events = () => {
                     </span>
                   </td>
                 </tr>
-
-                <Pagination
-                  currentPage={currentPage}
-                  numberOfPages={numberOfPages}
-                  handlePerPage={handlePerPage}
-                />
+                <div className="ml-[120px]">
+                  <Pagination
+                    currentPage={currentPage}
+                    numberOfPages={numberOfPages}
+                    handlePerPage={handlePerPage}
+                  />
+                </div>
               </tfoot>
             </table>
           </div>
