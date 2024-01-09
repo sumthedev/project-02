@@ -6,13 +6,13 @@ function Eventview() {
   return (
     <>
       <div className="flex flex-col mt-[50px] w-full p-[10px]">
-<<<<<<< HEAD
+
         <div className="flex w-full flex-row bg-02 mt-[20px] ">
           <div className="flex ml-[20px] mt-[12px]">
-=======
+
         <div className="flex flex-row bg-02 mt-[20px] w-full">
           <div className="flex mt-[12px] ml-[20px]">
->>>>>>> 74ada0eb744b558a323c1c7f3367ab6165e39cac
+
             <span>
               <img src="/images/event.png" alt="view" />
             </span>
@@ -64,11 +64,11 @@ function Eventview() {
               </div>
             </div>
           </div>
-<<<<<<< HEAD
+
           <div className="flex back-color mt-[20px]  ml-[400px] w-[50px] h-[33px]">
-=======
+
           <div className="flex back-color mt-[20px]  ml-[50px] w-[50px] h-[33px]">
->>>>>>> 74ada0eb744b558a323c1c7f3367ab6165e39cac
+
             <button>
               <span className="flex ml-[12px]  text-sm text-white">
                 <Link to="/event-edit">Edit</Link>
