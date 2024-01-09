@@ -41,7 +41,7 @@ const Events = () => {
   const numberOfPages = Math.ceil(data.length / itemsPerPage);
   return (
     <>
-      <div className="bg-05-shadow w-full  mt-[50px]">
+      <div className="bg-05-shadow w-full mr-[50px]  mt-[50px]">
         <div
           className="flex flex-row p-[14px] "
           style={{ borderBottom: "1px solid #EBE9F1", marginRight: "10px" }}
@@ -49,12 +49,12 @@ const Events = () => {
           <span className="text-04 mt-[12px] ml-[30px]">Events</span>
         </div>
         <div
-          className="flex flex-row p-[14px] "
+          className="flex flex-row p-[14px] justify-between"
           style={{ borderBottom: "1px solid #EBE9F1", marginRight: "10px" }}
         >
-          <span className="text-05  mt-[18px] ml-[30px]">Show</span>
-          <span className="text-06  mt-[22px] ml-[30px]">10</span>
-          <span className=" mt-[20px] ml-[30px]">
+          <span className="text-05 mt-[18px] ml-[30px]">Show</span>
+          <span className="text-06 mt-[22px] ml-[30px]">10</span>
+          <span className="mt-[20px] ml-[30px]">
             <img src="/images/up.svg" alt="up" />
           </span>
           <div
@@ -204,12 +204,13 @@ const Events = () => {
                     </span>
                   </td>
                 </tr>
-
-                <Pagination
-                  currentPage={currentPage}
-                  numberOfPages={numberOfPages}
-                  handlePerPage={handlePerPage}
-                />
+                <div className="ml-[120px]">
+                  <Pagination
+                    currentPage={currentPage}
+                    numberOfPages={numberOfPages}
+                    handlePerPage={handlePerPage}
+                  />
+                </div>
               </tfoot>
             </table>
           </div>

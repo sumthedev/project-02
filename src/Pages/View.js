@@ -4,8 +4,8 @@ import Card from "../components/Card";
 function View() {
   return (
     <>
-      <div className="flex flex-col">
-        <div className="flex flex-row bg-02 mt-[20px] w-[1005px] h-[190px]">
+      <div className="flex flex-col mt-[50px] w-full p-[10px]">
+        <div className="flex w-full flex-row bg-02 mt-[20px] ">
           <div className="flex ml-[20px] mt-[12px]">
             <span>
               <img src="/images/view-01.png" alt="view" />
@@ -35,7 +35,7 @@ function View() {
               </div>
             </div>
           </div>
-          <div className="flex back-color mt-[20px]  ml-[300px] w-[50px] h-[33px]">
+          <div className="flex back-color mt-[20px]  ml-[400px] w-[50px] h-[33px]">
             <button>
               <span className="flex ml-[12px]  text-sm text-white">
                 <Link to="/edit">Edit</Link>

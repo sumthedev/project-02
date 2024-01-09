@@ -1,8 +1,9 @@
 import { useEffect, useRef, useState } from "react";
-import { Link } from "react-router-dom";
+
 import { data } from "../data/mockUpdata";
 import Pagination from "../components/Pagination";
 import Actions from "../components/Actions";
+import Form from "../components/Form";
 
 let itemsPerPage = 5;
 
@@ -10,6 +11,15 @@ const rows = data;
 
 function User() {
   const [currentPage, setCurrentPage] = useState(0);
+  const [showFormPopover, setShowFormPopover] = useState(false);
+
+  const toggleFormPopover = () => {
+    setShowFormPopover(!showFormPopover);
+  };
+
+  const closeFormPopover = () => {
+    setShowFormPopover(false);
+  };
 
   const rows = data.slice(
     currentPage * itemsPerPage,
@@ -46,20 +56,28 @@ function User() {
 
   return (
     <>
-      <div className="bg-05-shadow w-full  mt-[50px]">
+      <div className="bg-05-shadow w-full mr-[50px] mt-[50px]">
         <div
           className="flex flex-row "
           style={{ borderBottom: "1px solid #EBE9F1", marginRight: "10px" }}
         >
           <span className="text-04 p-[10px] mt-[16px] ml-[30px]">Users</span>
           <span className="mt-[1px] ml-auto">
-            <button className="button-01 p-[10px] mt-[10px] mb-[10px]">
-              <Link to="/form">+ Add User</Link>
+            <button
+              className="button-01 p-[10px] mt-[10px] mb-[10px]"
+              onClick={toggleFormPopover}
+            >
+              + Add User
             </button>
+            {showFormPopover && (
+              <div className="popover-container-03">
+                <Form onClose={closeFormPopover} />
+              </div>
+            )}
           </span>
         </div>
         <div
-          className="flex flex-row p-[10px] "
+          className="flex flex-row p-[10px] justify-between"
           style={{ borderBottom: "1px solid #EBE9F1", marginRight: "10px" }}
         >
           <span className="text-05  mt-[18px] ml-[30px]">Show</span>
@@ -193,7 +211,7 @@ function User() {
                   </tr>
                 ))}
               </tbody>
-              <tfoot className="">
+              <tfoot>
                 <tr>
                   <td className="text-10 " colSpan="">
                     <span className=" text-white flex flex-col ml-[30px]">
@@ -209,11 +227,13 @@ function User() {
                   </td>
                 </tr>
 
-                <Pagination
-                  currentPage={currentPage}
-                  numberOfPages={numberOfPages}
-                  handlePerPage={handlePerPage}
-                />
+                <tr className="flex justify-end items-end ml-auto">
+                  <Pagination
+                    currentPage={currentPage}
+                    numberOfPages={numberOfPages}
+                    handlePerPage={handlePerPage}
+                  />
+                </tr>
               </tfoot>
             </table>
           </div>

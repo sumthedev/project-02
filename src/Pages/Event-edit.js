@@ -4,8 +4,8 @@ import Card from "../components/Card";
 function Eventedit() {
   return (
     <>
-      <div className="flex flex-col">
-        <div className="flex flex-row bg-02 mt-[20px] w-[1005px] h-[210px]">
+      <div className="flex flex-col mt-[50px] w-full p-[10px]">
+        <div className="flex w-full flex-row bg-02 mt-[20px] ">
           <div className="flex mt-[12px] ml-[20px]">
             <span>
               <img src="/images/event.png" alt="view" />
@@ -58,7 +58,7 @@ function Eventedit() {
               </div>
             </div>
           </div>
-          <div className="flex back-color mt-[20px]  ml-[-150px] w-[110px] h-[40px]">
+          <div className="flex back-color mt-[20px]  ml-[50px] w-[110px] h-[40px]">
             <Link to="/event-view">
               <button>
                 <span className="flex ml-[12px] flex-row mt-[10px]  text-sm text-white">

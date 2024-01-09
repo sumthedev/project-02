@@ -161,6 +161,15 @@ a.active {
   z-index: 1;
   right: 50px;
 }
+
+.popover-container-03 {
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%);
+
+  z-index: 1; /* Make sure it appears above other elements */
+}
 .user-graph {
   overflow: hidden;
 }
@@ -770,4 +779,8 @@ pagination */
   .container {
     max-width: 100%;
   }
+}
+
+.edit {
+  width: 100%;
 }

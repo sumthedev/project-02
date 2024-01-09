@@ -3,8 +3,8 @@ import React from "react";
 export default function Card() {
   return (
     <>
-      <div className="flex flex-col w-[1005px] h-[400px]">
-        <div className="flex flex-wrap">
+      <div className="flex flex-col w-full">
+        <div className="flex flex-wrap w-full">
           <div className="card-01 mt-[20px] bg-white bg-06-shadow rounded-[5px] w-[320px] h-[105px]">
             <div className="flex flex-row">
               <span className="flex ml-[20px] mt-[12px]">
