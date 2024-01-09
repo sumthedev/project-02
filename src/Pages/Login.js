@@ -1,8 +1,6 @@
 function Login({ onLogin }) {
   const handleClick = (e) => {
-    e.preventDefault();
-    const nameInput = document.getElementById("nameInput").value;
-    onLogin(nameInput); // Pass the entered name to the onLogin function
+    e.preventDefault(e);
     alert("Registration Process on working. Please Login");
   };
   return (
