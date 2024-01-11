@@ -28,7 +28,7 @@ function Login({ onLogin }) {
               <input
                 id="nameInput"
                 className="border border-gray-200 py-2 px-3 rounded-md"
-                type="text"
+                type="password"
                 name="password"
                 placeholder="password"
                 required
