@@ -1,6 +1,6 @@
 function Login({ onLogin }) {
   const handleClick = (e) => {
-    e.preventDefault(e);
+    e.preventDefault();
     alert("Registration Process on working. Please Login");
   };
   return (
@@ -14,24 +14,24 @@ function Login({ onLogin }) {
         <div className="flex flex-col p-[10px]">
           <form>
             <label className="flex flex-col mb-4">
-              <span className="p-[10px] font-semibold">Name</span>
+              <label className="flex flex-col mb-4">
+                <span className=" p-[10px] font-semibold">Email</span>
+                <input
+                  className="border border-gray-200 py-2 px-3 rounded-md"
+                  type="text"
+                  name="email"
+                  required
+                  placeholder="johndoe@gmail.com"
+                />
+              </label>
+              <span className="p-[10px] font-semibold">Password</span>
               <input
                 id="nameInput"
                 className="border border-gray-200 py-2 px-3 rounded-md"
                 type="text"
-                name="name"
+                name="password"
+                placeholder="password"
                 required
-                placeholder="John Doe"
-              />
-            </label>
-            <label className="flex flex-col mb-4">
-              <span className=" p-[10px] font-semibold">Email</span>
-              <input
-                className="border border-gray-200 py-2 px-3 rounded-md"
-                type="text"
-                name="email"
-                required
-                placeholder="johndoe@gmail.com"
               />
             </label>
             <div className="flex justify-between p-[10px]">
